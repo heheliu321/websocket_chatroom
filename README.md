@@ -1,5 +1,5 @@
 
-1.本文使用内置的tomcat 访问地址http://localhost:8080/chatroom/chat/login
+1.本文使用内置的tomcat 访问地址web http://localhost:8080/chatroom/
 websocket地址--->ws://127.0.0.1:8080/chatroom/ws
 MyWebSocketClient client = new MyWebSocketClient(new URI("ws://127.0.0.1:8080/chatroom/ws"), new Draft_6455(), headers, 10000);
 （注意new Draft_6455()是必不可少的）
