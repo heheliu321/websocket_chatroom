@@ -12,7 +12,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd   
         ">
     <!-- bean组件扫描 -->    
-    <context:component-scan base-package="cn.itcast.chatroom.web" />
+    <context:component-scan base-package="cn.itcast" />
     
     <!-- MVC注解驱动 -->
 	<mvc:annotation-driven />

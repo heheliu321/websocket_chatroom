@@ -52,7 +52,7 @@ public class MyWebSocketClient extends WebSocketClient {
 
         String userName = "aaa";
         Map<String, String> headers = new HashMap<>();
-        headers.put("Cookie", "JSESSIONID=2CC1CD2BCE9DDAF0CEDE5C8E42B7BD0A");
+        headers.put("Cookie", "JSESSIONID=65E843ED8B84981BE74AA39B2F894C4D");
         User user = new User();
         user.setNickname(userName);
         headers.put("loginUser", GsonUtils.toJson(user));
@@ -68,7 +68,7 @@ public class MyWebSocketClient extends WebSocketClient {
         }
         System.out.println("连接成功...");
 
-        //连接成功,发送信息
+        //连接成功,给www用户发送信息
         Message message = new Message();
         message.setDate(new Date());
         message.setText("www,你好");

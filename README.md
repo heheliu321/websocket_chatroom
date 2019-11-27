@@ -11,11 +11,25 @@ MyWebSocketClient client = new MyWebSocketClient(new URI("ws://127.0.0.1:8080/ch
 使用用户aaa和www分别登录，获取到头域Cookie: JSESSIONID=9BED8BA56B6BE0E92777C743979F2B30和Cookie: JSESSIONID=9BED8BA56B6BE0E92777C743979F2B30
 注意
 
+MyWebSocketClient
+
 ```
         String userName="aaa";
         Map<String, String> headers = new HashMap<>();
         headers.put("Cookie", "JSESSIONID=6CD7248AD419C7DFDC696FA01C28A467");
 ```
+
+```
+MyWebSocketClient2
+```
+
+```
+        String userName="www";
+        Map<String, String> headers = new HashMap<>();
+        headers.put("Cookie", "JSESSIONID=1345391D0C50435F6E0896F28759C769");
+```
+
+
 
 ### 3.可以实现两个用户互相发消息
 

@@ -51,11 +51,11 @@ public class MyWebSocketClient2 extends WebSocketClient {
 
         String userName="www";
         Map<String, String> headers = new HashMap<>();
-        headers.put("Cookie", "JSESSIONID=ED4056DFA79501A123F28131BDB05526");
+        headers.put("Cookie", "JSESSIONID=1345391D0C50435F6E0896F28759C769");
         User user = new User();
         user.setNickname(userName);
         headers.put("loginUser",GsonUtils.toJson(user));
-        MyWebSocketClient2 client = new MyWebSocketClient2(new URI("ws://127.0.0.1:8080/chat/ws"), new Draft_6455(), headers, 10000);
+        MyWebSocketClient2 client = new MyWebSocketClient2(new URI("ws://127.0.0.1:8080/chatroom/ws"), new Draft_6455(), headers, 10000);
         if (client == null) {
             logger.error("client is null");
             return;
